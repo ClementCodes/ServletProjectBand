@@ -1,10 +1,22 @@
 package dao.daoClient;
 
+import java.sql.SQLException;
+import java.util.List;
+
 import dao.Dao;
-import model.Client;
 
-public interface DaoClients extends Dao<Client> {
+public interface DaoClients extends Dao {
 
-	public void create(Client client);
+	@Override
+	default List findAll() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default Object findById(Object id) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

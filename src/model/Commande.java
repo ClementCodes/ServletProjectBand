@@ -7,20 +7,20 @@ public interface Commande {
 	public int getPrixTotal();
 
 	/*
-	 * Renvoie une chaine de caractères représentant la liste de articles et la
-	 * quantité correspondante. La chaine ressemble à
+	 * Renvoie une chaine de caractï¿½res reprï¿½sentant la liste de articles et la
+	 * quantitï¿½ correspondante. La chaine ressemble ï¿½
 	 * [quantite1-idarticle1;quantite2-idarticle2;...]
 	 */
-	public String getInfos();
+	public String getInfo();
 
 	/*
-	 * Cherche dans la liste des articles de la commande et rajoute la quantité
-	 * indiquée. Si l'article n'éxiste pas, il le créé
+	 * Cherche dans la liste des articles de la commande et rajoute la quantitï¿½
+	 * indiquï¿½e. Si l'article n'ï¿½xiste pas, il le crï¿½ï¿½
 	 */
 	public void ajouterArticle(Article a, int quantite);
 
 	/*
-	 * [V1.5] Supprime la quantité demandée de l'article
+	 * [V1.5] Supprime la quantitï¿½ demandï¿½e de l'article
 	 */
 	public void supprimerArticle(Article a, int quantite);
 

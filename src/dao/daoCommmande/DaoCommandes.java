@@ -6,7 +6,7 @@ import dao.Dao;
 import model.Client;
 import model.Commande;
 
-public interface DaoCommandes extends Dao<Commande> {
+public interface DaoCommandes extends Dao<Commande, Integer> {
 
 	public List<Commande> findByClient(Client client);
 

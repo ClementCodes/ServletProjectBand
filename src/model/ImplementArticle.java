@@ -1,25 +1,39 @@
 package model;
 
-public class ImplementArticle {
-
+public class ImplementArticle implements Article {
     private int idArticle;
-    private String article;
+    private String categorie;
     private String description;
     private int prix;
 
-    public ImplementArticle(int idArticle, String article, String description, int prix) {
+    public ImplementArticle(int idArticle, String categorie, String description, int prix) {
         this.idArticle = idArticle;
-        this.article = article;
+        this.categorie = categorie;
         this.description = description;
         this.prix = prix;
     }
 
-    public String getArticle() {
-        return article;
+    public String getCategorie() {
+        return categorie;
     }
 
-    public void setArticle(String article) {
-        this.article = article;
+    public void setCategorie(String categorie) {
+        this.categorie = categorie;
+    }
+
+    public int getIdArticle() {
+        return idArticle;
+    }
+
+    public void setIdArticle(int idArticle) {
+        this.idArticle = idArticle;
+    }
+
+    public void setPrix(int prix) {
+        this.prix = prix;
+    }
+
+    public ImplementArticle() {
     }
 
     public String getDescription() {
@@ -34,16 +48,10 @@ public class ImplementArticle {
         return prix;
     }
 
-    public void setPrix(int prix) {
-        this.prix = prix;
+    @Override
+    public String toString() {
+        return "ImplementArticle [ categorie=" + categorie + ", description=" + description
+                + ", idArticle=" + idArticle + ", prix=" + prix + "]";
     }
 
- 
-
-    
-
-
-    
-
 }
-

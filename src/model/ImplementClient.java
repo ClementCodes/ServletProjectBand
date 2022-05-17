@@ -6,9 +6,20 @@ public class ImplementClient implements Client {
     private String password;
     private String fName;
     private String name;
+    private Telephone telephone;
     private Adresse adresse;
     private Instructions instructions;
-    private Telephone telephone;
+
+    public ImplementClient(int idClient, String password, String fName, String name, Telephone telephone,
+            Adresse adresse, Instructions instructions) {
+        this.idClient = idClient;
+        this.password = password;
+        this.fName = fName;
+        this.name = name;
+        this.telephone = telephone;
+        this.adresse = adresse;
+        this.instructions = instructions;
+    }
 
     public int getIdClient() {
         return idClient;
